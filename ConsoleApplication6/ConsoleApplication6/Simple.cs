@@ -11,28 +11,26 @@ namespace ConsoleApplication6
         static void Main(string[] args)
         {
             Console.WriteLine("Insert set of numbers with , between them ");
-            string s = Console.ReadLine();
-            string[] array = s.Split(',');
-            //int[] a = new int[s.Length];
+            string[] array = Console.ReadLine().Split(',');
 
-            
             for (int i = 0; i < array.Length; i++)
             {
+                int s = 0;
                 int a = int.Parse(array[i]);
-                for (int k = 2; k*k <= a; k++)
-                
+                for (int k = 1; k <= a; k++)
+                {
                     if (a % k == 0)
                     {
-                        continue;
+                        s++;
                     }
-                    else
-                    {
-                        Console.WriteLine(array[i]);
-                    }
-                
-                Console.ReadKey();
-
+                }
+                if (s == 2)
+                {
+                    Console.WriteLine(a);
+                }
             }
+            Console.ReadKey();
+
         }
     }
 }
