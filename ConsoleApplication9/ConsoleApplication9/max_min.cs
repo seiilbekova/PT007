@@ -26,14 +26,14 @@ namespace ConsoleApplication9
             for (int i = 0; i < array.Length; i++)
                 {
                     if (array[i] < min)
-                    {
-                        min = array[i];    
-                    }   
+                        {
+                            min = array[i];    
+                        }   
                     
                     if (array[i] > max)
-                    {
-                        max = array[i];
-                    } 
+                        {
+                            max = array[i];
+                        }    
                 }
             Console.WriteLine("maximum is " + max + " and minimum is " + min);
 
