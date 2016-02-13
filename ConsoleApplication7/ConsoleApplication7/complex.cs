@@ -25,8 +25,9 @@ namespace ConsoleApplication7
             for (int i = 1; i <= Math.Min(x, y); i++)
                {
                      if (x % i == 0 && y % i == 0)
-                         z = i;
+                     z = i;
                }
+
             x /= z;
             y /= z;
 
@@ -45,6 +46,7 @@ namespace ConsoleApplication7
                 return sum;
             }
     }
+    
 
     class Program
     {
