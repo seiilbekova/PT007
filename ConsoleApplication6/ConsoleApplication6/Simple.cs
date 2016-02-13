@@ -14,21 +14,21 @@ namespace ConsoleApplication6
             string[] array = Console.ReadLine().Split(',');
 
             for (int i = 0; i < array.Length; i++)
-            {
-                int s = 0;
-                int a = int.Parse(array[i]);
-                for (int k = 1; k <= a; k++)
                 {
-                    if (a % k == 0)
-                    {
-                        s++;
-                    }
+                    int s = 0;
+                    int a = int.Parse(array[i]);
+                    for (int k = 1; k <= a; k++)
+                         {
+                             if (a % k == 0)
+                                 {
+                                   s++;
+                                 }
                 }
                 if (s == 2)
-                {
-                    Console.WriteLine(a);
+                    {
+                        Console.WriteLine(a);
+                    }
                 }
-            }
             Console.ReadKey();
 
         }

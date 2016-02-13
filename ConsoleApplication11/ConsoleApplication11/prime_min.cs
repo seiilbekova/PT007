@@ -9,7 +9,7 @@ namespace ConsoleApplication9
 {
     class Program
     {
-        public static int checkPrime (int a)
+        public static int checkPrime (int [] array)
         {
             for (int i = 0; i < array.Length; i++)
             {
