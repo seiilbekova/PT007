@@ -27,7 +27,6 @@ namespace ConsoleApplication7
                      if (x % i == 0 && y % i == 0)
                      z = i;
                }
-
             x /= z;
             y /= z;
 
